@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Our Fancy Spa</title>
+</head>
+<body>
+    <form method= "post" action = "/user">
+        <label>If you are new to the spa please create your user account.<br/><br/>
+            Username:
+            <input type="text" name="username"></br><br/>
+        </label>
+        <label>Email:
+            <input type="email" name="email"><br/><br/>
+        </label>
+        <label>Password(8 char): <br/>
+            <input type="password" name="password" maxlength="8"><br/>
+        </label>
+        <label>Verify Password: <br/>
+            <input type="password" name="verify" maxlength="8">
+        </label>
+        <input type="submit" class="nav-item"><a class="nav-item" href="/user/index"></a>
+    </form>
+</body>
+</html>
