@@ -8,16 +8,16 @@
     <form method= "post" action = "/user">
         <label>If you are new to the spa please create your user account.<br/><br/>
             Username:
-            <input type="text" name="user.username"></br><br/>
+            <input type="text" name="${user.username}"></br><br/>
         </label>
         <label>Email:
-            <input name="user.email"><br/><br/>
+            <input name="${user.email}"><br/><br/>
         </label>
         <label>Password(8 char): <br/>
-            <input type="password" name="user.password" maxlength="8"><br/>
+            <input type="password" name="${user.password}" maxlength="8"><br/>
         </label>
         <label>Verify Password: <br/>
-            <input type="password" name="user.verify" maxlength="8">
+            <input type="password" name="${user.verify}" maxlength="8">
         </label>
         <input type="submit" class="nav-item"><a class="nav-item" href="/user/index"></a>
     </form>

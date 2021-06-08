@@ -6,18 +6,18 @@ import javax.validation.constraints.Size;
 
 public class User {
 
-    @NotBlank
+    @NotBlank(message = "Username is required")
     @Size(min=5, max=15)
     private static String username;
 
     @Email
     private static String email;
 
-    @NotBlank
+    @NotBlank(message="Password is Required")
     @Size(min=6)
     private static String password;
 
-    @NotBlank
+    @NotBlank(message="Passwords Must Match")
     private static String verify;
 
     public User() {
