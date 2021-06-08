@@ -1,14 +1,30 @@
 package org.launchcode.spaday;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
+
 public class User {
+
+    @NotBlank
+    @Size(min=5, max=15)
     private static String username;
+
+    @Email
     private static String email;
+
+    @NotBlank
+    @Size(min=6)
     private static String password;
+
+    @NotBlank
+    private static String verify;
 
     public User() {
         this.username=username;
         this.email=email;
         this.password=password;
+        this.verify=verify;
     }
 
     public static String getUsername() {
